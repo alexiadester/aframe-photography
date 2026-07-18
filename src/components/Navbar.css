@@ -12,11 +12,19 @@
   align-items: center;
   justify-content: space-between;
   padding-block: 0.65rem;
+  overflow: hidden;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 
 .navbar__brand img {
-  height: 56px;
+  height: 100%;
   width: auto;
+  max-width: none;
 }
 
 .navbar__links {
