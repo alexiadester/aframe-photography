@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="footer__social">
-          <a href="mailto:aframephotographyy@gmail.com">Email</a>
+          <a href="mailto:info@aframephotography.co.za">Email</a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer">
             Instagram
           </a>

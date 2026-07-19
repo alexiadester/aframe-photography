@@ -5,7 +5,7 @@ import './Contact.css'
 // Get a free access key at https://web3forms.com (sign up with the site's
 // contact email) and paste it here. This key is safe to expose publicly —
 // that's how Web3Forms is designed to work.
-const WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'
+const WEB3FORMS_ACCESS_KEY = '1aea9337-97d3-4f37-95ed-b1082e65c505'
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
@@ -50,8 +50,8 @@ export default function Contact() {
             <h1>Let's Chat</h1>
             <p>
               You're welcome to pop me an email at{' '}
-              <a href="mailto:aframephotographyy@gmail.com">
-                aframephotographyy@gmail.com
+              <a href="mailto:info@aframephotography.co.za">
+                info@aframephotography.co.za
               </a>
               , or fill out the form below and I'll be in touch!
             </p>
