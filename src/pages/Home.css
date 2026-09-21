@@ -94,7 +94,7 @@
 }
 
 .gallery-teaser__grid img.crop-top {
-  object-position: top;
+  object-position: center 20%;
 }
 
 .cta {

@@ -32,7 +32,7 @@
 }
 
 .gallery-grid__item img.crop-top {
-  aspect-ratio: 1091 / 750;
+  aspect-ratio: 1091 / 1140;
   object-fit: cover;
   object-position: top;
 }

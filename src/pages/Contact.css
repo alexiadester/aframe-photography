@@ -4,13 +4,22 @@
   min-height: 80svh;
 }
 
+.contact__img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  background: var(--cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .contact__img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
-  background: var(--cream-dark);
-  min-height: 420px;
   filter: grayscale(1);
 }
 
@@ -22,44 +31,29 @@
 }
 
 .contact__inner {
-  padding: 1.4rem;
-  max-width: 190px;
+  padding: 3.5rem 2.5rem;
+  max-width: 460px;
   width: 100%;
-  transform: scale(0.85);
-  transform-origin: center;
-}
-
-.contact__inner h1 {
-  font-size: 1.3rem;
-}
-
-.contact__inner .eyebrow {
-  font-size: 1rem;
-}
-
-.contact__inner p {
-  font-size: 0.68rem;
-  line-height: 1.5;
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .contact__row {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .contact__form label {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  font-size: 0.55rem;
+  gap: 0.4rem;
+  font-size: 0.85rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text);
@@ -68,10 +62,10 @@
 .contact__form input,
 .contact__form textarea {
   font-family: var(--sans);
-  font-size: 0.68rem;
-  padding: 0.4em 0.55em;
+  font-size: 1rem;
+  padding: 0.7em 0.9em;
   border: 1px solid var(--blush);
-  border-radius: 6px;
+  border-radius: 8px;
   background: var(--white);
   color: var(--text);
   text-transform: none;
@@ -85,22 +79,20 @@
 }
 
 .contact__form button {
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   align-self: flex-start;
-  padding: 0.5em 1.2em;
-  font-size: 0.65rem;
 }
 
 .contact__success {
-  margin-top: 0.75rem;
+  margin-top: 1.5rem;
   font-family: var(--serif);
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--forest);
 }
 
 .contact__error {
   color: #a33;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 
 .hidden-field {
@@ -112,7 +104,7 @@
     grid-template-columns: 1fr;
   }
 
-  .contact__img {
+  .contact__img-wrap {
     min-height: 260px;
   }
 
@@ -121,35 +113,6 @@
   }
 
   .contact__inner {
-    max-width: 340px;
-    transform: none;
-    padding: 2rem 0;
-  }
-
-  .contact__inner h1 {
-    font-size: 2rem;
-  }
-
-  .contact__inner .eyebrow {
-    font-size: 1.6rem;
-  }
-
-  .contact__inner p {
-    font-size: 1rem;
-  }
-
-  .contact__form label {
-    font-size: 0.85rem;
-  }
-
-  .contact__form input,
-  .contact__form textarea {
-    font-size: 1rem;
-    padding: 0.7em 0.9em;
-  }
-
-  .contact__form button {
-    font-size: 0.95rem;
-    padding: 0.85em 2em;
+    padding: 2.5rem 1.5rem;
   }
 }

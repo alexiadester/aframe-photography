@@ -42,7 +42,9 @@ export default function Contact() {
   return (
     <section className="contact">
       <div className="contact__grid">
-        <img src={contactImg} alt="" className="contact__img" />
+        <div className="contact__img-wrap">
+          <img src={contactImg} alt="" className="contact__img" />
+        </div>
 
         <div className="contact__panel">
           <div className="container contact__inner">
