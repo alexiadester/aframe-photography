@@ -18,15 +18,22 @@ import img17 from '../assets/gallery/gallery-17.jpg'
 import img18 from '../assets/gallery/gallery-18.jpg'
 import img19 from '../assets/gallery/gallery-19.jpg'
 
-export const galleryImages = [
+export type GalleryImage = {
+  src: string
+  alt: string
+  /** Crop to the top half of the frame (used for images with busy bottoms). */
+  cropTop?: boolean
+}
+
+export const galleryImages: GalleryImage[] = [
   { src: img01, alt: 'A-Frame Photography — couples portrait' },
   { src: img02, alt: 'A-Frame Photography — couples portrait' },
   { src: img03, alt: 'A-Frame Photography — couples portrait' },
   { src: img04, alt: 'A-Frame Photography — couples portrait' },
   { src: img05, alt: 'A-Frame Photography — couples portrait' },
-  { src: img06, alt: 'A-Frame Photography — couples portrait' },
+  { src: img06, alt: 'A-Frame Photography — couples portrait', cropTop: true },
   { src: img07, alt: 'A-Frame Photography — couples portrait' },
-  { src: img08, alt: 'A-Frame Photography — couples portrait' },
+  { src: img18, alt: 'A-Frame Photography — couples portrait' },
   { src: img09, alt: 'A-Frame Photography — couples portrait' },
   { src: img10, alt: 'A-Frame Photography — couples portrait' },
   { src: img11, alt: 'A-Frame Photography — couples portrait' },
@@ -36,6 +43,6 @@ export const galleryImages = [
   { src: img15, alt: 'A-Frame Photography — couples portrait' },
   { src: img16, alt: 'A-Frame Photography — couples portrait' },
   { src: img17, alt: 'A-Frame Photography — couples portrait' },
-  { src: img18, alt: 'A-Frame Photography — couples portrait' },
+  { src: img08, alt: 'A-Frame Photography — couples portrait' },
   { src: img19, alt: 'A-Frame Photography — couples portrait' },
 ]

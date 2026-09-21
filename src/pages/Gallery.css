@@ -31,6 +31,12 @@
   transition: transform 0.35s ease;
 }
 
+.gallery-grid__item img.crop-top {
+  aspect-ratio: 1091 / 750;
+  object-fit: cover;
+  object-position: top;
+}
+
 .gallery-grid__item:hover img {
   transform: scale(1.03);
 }

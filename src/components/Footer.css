@@ -1,8 +1,9 @@
 .footer {
-  background: var(--forest-dark);
-  color: var(--cream);
+  background: var(--cream-dark);
+  color: var(--text);
   padding: 3.5rem 0 2rem;
   margin-top: 4rem;
+  border-top: 1px solid var(--blush);
 }
 
 .footer__inner {
@@ -16,14 +17,13 @@
 .footer__logo {
   height: 64px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.92;
+  opacity: 0.95;
 }
 
 .footer__tagline {
   font-family: var(--script);
   font-size: 1.3rem;
-  color: var(--cream-dark);
+  color: var(--forest);
   max-width: 30ch;
   margin: 0;
 }
@@ -40,7 +40,7 @@
 }
 
 .footer__links a:hover {
-  color: var(--blush);
+  color: var(--forest);
 }
 
 .footer__social {
@@ -59,6 +59,6 @@
 .footer__copy {
   margin-top: 1.5rem;
   font-size: 0.75rem;
-  color: var(--cream-dark);
-  opacity: 0.6;
+  color: var(--text-soft);
+  opacity: 0.8;
 }

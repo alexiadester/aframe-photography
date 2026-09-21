@@ -53,7 +53,13 @@ export default function Home() {
           </div>
           <div className="gallery-teaser__grid">
             {featured.map((img) => (
-              <img key={img.src} src={img.src} alt={img.alt} loading="lazy" />
+              <img
+                key={img.src}
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                className={img.cropTop ? 'crop-top' : undefined}
+              />
             ))}
           </div>
           <div className="text-center">

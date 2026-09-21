@@ -1,8 +1,18 @@
-import { useEffect, useState } from 'react'
-import { galleryImages } from '../data/gallery'
+import { useEffect, useMemo, useState } from 'react'
+import { galleryImages as galleryImagesSource } from '../data/gallery'
 import './Gallery.css'
 
+function shuffle<T>(items: T[]): T[] {
+  const arr = [...items]
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
+}
+
 export default function Gallery() {
+  const galleryImages = useMemo(() => shuffle(galleryImagesSource), [])
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   useEffect(() => {
@@ -45,7 +55,12 @@ export default function Gallery() {
                 onClick={() => setActiveIndex(index)}
                 aria-label={`Open image ${index + 1}`}
               >
-                <img src={img.src} alt={img.alt} loading="lazy" />
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className={img.cropTop ? 'crop-top' : undefined}
+                />
               </button>
             ))}
           </div>

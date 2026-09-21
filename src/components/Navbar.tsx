@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="container navbar__inner">
+      <div className="navbar__inner">
         <NavLink to="/" className="navbar__brand" onClick={() => setOpen(false)}>
           <img src={logo} alt="A-Frame Photography" />
         </NavLink>
