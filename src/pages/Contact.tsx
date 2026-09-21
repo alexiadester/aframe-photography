@@ -3,7 +3,7 @@ import contactImg from '../assets/contact.jpg'
 import './Contact.css'
 
 // Get a free access key at https://web3forms.com (sign up with the site's
-// contact email) and paste it here. This key is safe to expose publicly —
+// contact email) and paste it here. This key is safe to expose publicly,
 // that's how Web3Forms is designed to work.
 const WEB3FORMS_ACCESS_KEY = '1aea9337-97d3-4f37-95ed-b1082e65c505'
 
@@ -98,7 +98,7 @@ export default function Contact() {
 
                 {status === 'error' && (
                   <p className="contact__error">
-                    Something went wrong sending your message — please try emailing
+                    Something went wrong sending your message. Please try emailing
                     directly instead.
                   </p>
                 )}

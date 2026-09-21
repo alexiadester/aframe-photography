@@ -35,7 +35,7 @@ export default function About() {
             shaping the woman I am today, providing a deeper understanding of people and
             human behaviour, which I believe enhances my work as a photographer. This
             background allows me to notice subtle details that others may overlook and to
-            support people during vulnerable moments &mdash; situations that photographers
+            support people during vulnerable moments, situations that photographers
             often find themselves privileged to witness.
           </p>
 

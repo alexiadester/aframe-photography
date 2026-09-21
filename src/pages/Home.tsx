@@ -35,7 +35,7 @@ export default function Home() {
             <p>
               My passion for photography began in my early teenage years, capturing the
               intricate details of the natural world. That same eye for detail now shapes
-              how I photograph people &mdash; noticing the small, intimate moments between
+              how I photograph people, noticing the small, intimate moments between
               couples and families, and holding onto them in a single frame.
             </p>
             <Link to="/about" className="btn btn--outline">

@@ -5,7 +5,7 @@ const packages = [
   {
     name: 'Couples & Engagements',
     description:
-      "A relaxed session designed around the two of you — whether it's an engagement shoot or simply celebrating your relationship.",
+      "A relaxed session designed around the two of you, whether it's an engagement shoot or simply celebrating your relationship.",
     inclusions: [
       'Up to 1.5 hours on location',
       'Guidance on outfits & location choice',
@@ -16,7 +16,7 @@ const packages = [
   {
     name: 'Lifestyle',
     description:
-      'Natural, candid photography that captures everyday moments — at home, out and about, or wherever feels like you.',
+      'Natural, candid photography that captures everyday moments, at home, out and about, or wherever feels like you.',
     inclusions: [
       'Up to 1 hour session',
       'Candid, documentary-style approach',
@@ -27,7 +27,7 @@ const packages = [
   {
     name: 'Family',
     description:
-      'Warm, genuine family portraits that capture connection between the people who matter most — all ages and pets welcome.',
+      'Warm, genuine family portraits that capture connection between the people who matter most. All ages and pets welcome.',
     inclusions: [
       'Up to 1.5 hours on location',
       'Posed & candid combination',
@@ -56,8 +56,8 @@ export default function Packages() {
           <span className="eyebrow">Packages</span>
           <h1>Sessions &amp; Packages</h1>
           <p className="page-header__sub">
-            Every session is tailored to you. Below are the types of photography I offer
-            &mdash; get in touch and I'll put together a package to suit your needs.
+            Every session is tailored to you. Below are the types of photography I offer.
+            Get in touch and I'll put together a package to suit your needs.
           </p>
         </div>
       </section>
