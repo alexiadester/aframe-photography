@@ -6,45 +6,21 @@ const packages = [
     name: 'Couples & Engagements',
     description:
       "A relaxed session designed around the two of you, whether it's an engagement shoot or simply celebrating your relationship.",
-    inclusions: [
-      'Up to 1.5 hours on location',
-      'Guidance on outfits & location choice',
-      'Beautifully edited digital gallery',
-      'Online gallery for easy sharing & downloads',
-    ],
   },
   {
     name: 'Lifestyle',
     description:
       'Natural, candid photography that captures everyday moments, at home, out and about, or wherever feels like you.',
-    inclusions: [
-      'Up to 1 hour session',
-      'Candid, documentary-style approach',
-      'Edited digital gallery',
-      'Perfect for personal branding or milestone moments',
-    ],
   },
   {
     name: 'Family',
     description:
       'Warm, genuine family portraits that capture connection between the people who matter most. All ages and pets welcome.',
-    inclusions: [
-      'Up to 1.5 hours on location',
-      'Posed & candid combination',
-      'Edited digital gallery',
-      'Guidance on outfit coordination',
-    ],
   },
   {
     name: 'Wedding',
     description:
-      'Full wedding-day coverage, capturing every detail from getting ready through to the last dance.',
-    inclusions: [
-      'Full or half-day coverage',
-      'Two photographers available on request',
-      'Complete edited digital gallery',
-      'Engagement shoot add-on available',
-    ],
+      'Full/half wedding day coverage, capturing every detail from getting ready through to the last dance.',
   },
 ]
 
@@ -68,14 +44,6 @@ export default function Packages() {
             <div className="package-card" key={pkg.name}>
               <h3>{pkg.name}</h3>
               <p>{pkg.description}</p>
-              <ul>
-                {pkg.inclusions.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <Link to="/contact" className="btn btn--outline">
-                Enquire for Pricing
-              </Link>
             </div>
           ))}
         </div>

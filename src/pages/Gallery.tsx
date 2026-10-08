@@ -30,7 +30,7 @@ export default function Gallery() {
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [activeIndex])
+  }, [activeIndex, galleryImages.length])
 
   return (
     <>
